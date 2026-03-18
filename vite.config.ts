@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  base: '/noor-fragrances-desert-twilight/', // Must match your GitHub repo name exactly
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
